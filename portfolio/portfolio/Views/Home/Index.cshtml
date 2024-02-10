@@ -1,0 +1,28 @@
+﻿@model portfolio.Models.Profile
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">Profile Information</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Name:</strong> @Model.Name</p>
+                            <p><strong>ID:</strong> @Model.ID</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Github Profile:</strong> <a href="@Model.GitProfile">@Model.GitProfile</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
